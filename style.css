@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+}
+/* header */
+
+.admin-header {
+  grid-area: header;
+  height: 100px;
+  background: black;
+}
+.admin-sidebar {
+  grid-area: sidebar;
+  background: gray;
+  height: 100%;
+}
+.admin-website {
+  grid-area: content;
+}
