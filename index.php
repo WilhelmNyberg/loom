@@ -12,8 +12,9 @@
 <body>
     <div class="admin-header"></div>
     <div class="admin-sidebar"></div>
-    <div class="admin-website"></div>
-    <script src="website/script.js"></script>
+    <div class="admin-website" id="admin-website">
+
+    </div>
     <script src="script.js"></script>
 </body>
 
