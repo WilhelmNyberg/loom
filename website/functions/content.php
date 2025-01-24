@@ -3,6 +3,8 @@
 $link;
 $title;
 $text;
-$sql = "SELECT * FROM content WHERE file = $link";
+$src;
+$stmt = $conn->prepare("SELECT * FROM content WHERE file = ?");
+$stmt->bind_param("s", $link);
 
 include "../components/$link";
