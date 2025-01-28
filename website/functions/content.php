@@ -1,10 +1,11 @@
 <?php
 
-$link;
-$title;
-$text;
-$src;
 $stmt = $conn->prepare("SELECT * FROM content WHERE file = ?");
 $stmt->bind_param("s", $link);
+$stmt->execute();
 
-include "../components/$link";
+$things = $stmt->get_result();
+if ($things->num_rows > 0) {
+    while ($stuff = $things->fetch_assoc()) {
+    }
+}
