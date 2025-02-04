@@ -7,5 +7,6 @@ $stmt->execute();
 $things = $stmt->get_result();
 if ($things->num_rows > 0) {
     while ($stuff = $things->fetch_assoc()) {
+
     }
 }
